@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(100vw / 1440 * 10);
+  line-height: 1;
+  overflow: hidden;
+  position: fixed;
+ 
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  position: fixed;
+}
+
+a {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}

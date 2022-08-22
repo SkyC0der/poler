@@ -1,0 +1,21 @@
+#covid {
+  .table-row-light {
+    background-color: #ffffff;
+  }
+  .table-row-dark {
+    background-color: #c5c2c2;
+  }
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+
+    font-weight: 700;
+  }
+  .cases {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem 0;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}

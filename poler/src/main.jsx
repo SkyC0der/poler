@@ -7,10 +7,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Covid from "./pages/Covid";
 import PaymentFlow from "./pages/PaymentFlow";
 import Pay from "./pages/PaymentFlow/Pay";
+import { Provider } from "react-redux";
+import store from './pages/Covid/store'
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    {/* <Provider store = {store}> */}
-
+  // <React.StrictMode>
+  <Provider store={store}>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
@@ -19,6 +20,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/covid" element={<Covid />} />
       </Routes>
     </BrowserRouter>
-    {/* </Provider> */}
-  </React.StrictMode>
+  </Provider>
+  // </React.StrictMode>
 );

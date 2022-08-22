@@ -42,14 +42,14 @@ const Billing = () => {
 
         <div className="form__row__2">
           <Form.Item label="Card Number" onChange={cardNum} required>
-            <Input placeholder="4234 5675 3245 6432" />
+            <Input placeholder="4234 5675 3245 6432" maxLength={19} />
           </Form.Item>
           <Form.Item label="Expiry Date" required>
-            <Input placeholder="03/24" />
+            <Input placeholder="03/24" maxLength={5} />
           </Form.Item>
 
           <Form.Item label="CVV" required>
-            <Input placeholder="123" />
+            <Input placeholder="123" maxLength={3} />
           </Form.Item>
         </div>
         <div className="button__row">
